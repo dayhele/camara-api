@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.camara-list {
+    background-color: #EFEFEF;
+    height: 100%;
+}
+
+.camara-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camara-logo {
+    width: 300px;
+    margin: 24px;
+}
+
+.camara-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #0e0e0f;
+}
+
+.camara-subtitle {
+    margin: 12px 0;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.camara-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camara-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    border: 2px solid #3b3b3b;
+    border-radius: 8px;
+    padding: 20px 16px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
