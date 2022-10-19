@@ -2,53 +2,53 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.camara-list {
-    background-color: #EFEFEF;
-    height: 100%;
-}
-
-.camara-header {
+  }
+  
+  .camara-list {
+    background-color: #efefef;
+    
+  }
+  
+  .camara-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.camara-logo {
+  }
+  
+  .camara-logo {
     width: 300px;
     margin: 24px;
-}
-
-.camara-title {
-    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .camara-title {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
     color: #0e0e0f;
-}
-
-.camara-subtitle {
+  }
+  
+  .camara-subtitle {
     margin: 12px 0;
-    font-family: 'Inter Tight', sans-serif;
+    font-family: "Inter Tight", sans-serif;
     font-weight: 400;
     font-size: 18px;
     margin-right: 12px;
-}
-
-.camara-selection {
+  }
+  
+  .camara-selection {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.camara-list-container {
+  }
+  
+  .camara-list-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 32px;
+    margin: 58px;
     flex-wrap: wrap;
-}
-
-.member-card {
+  }
+  
+  .member-card {
     border: 2px solid #3b3b3b;
     border-radius: 8px;
     padding: 20px 16px;
@@ -58,5 +58,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-}
+  }
 
+   img {
+    width: 200px;
+  }
+  
+  #loading {
+    display: none;
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .loading-bar {
+    position: relative;
+    z-index: 1;
+  }

@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>INFNET - Câmara API</title>
-  </head>
-  <body>
-    <main class="camara-list">
-      <header class="camara-header">
-        <img
-          class="camara-logo"
-          src="./assets/img/marca-camara.svg"
-          alt="Logo da Câmara dos Deputados"
-        />
-        <h1 class="camara-title">Lista de Parlamentares</h1>
-      </header>
-      <div class="camara-selection">
-        <h2 class="camara-subtitle">
-          Selecione o partido e veja quem são os parlamentares:
-        </h2>
-        <select id="politicalSelect" name="politicalParty">
-          <label for="politicalParty">Selecione um partido</label>
-        </select>
-      </div>
-      <container class="camara-list-container">
-        <div class="member-card">
-            <h3 class="member-name">Nome do parlamentar</h3>
-            <p>Sigla do Partido</p>
-            <img src="" alt="Foto do parlamentar">
-        </div>
 
-      </container>
-    </main>
-  </body>
-  <script type="text/javascript" src="./scripts/main.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>INFNET - Câmara API</title>
+</head>
+
+<body>
+  <main class="camara-list">
+    <header class="camara-header">
+      <img class="camara-logo" src="./assets/img/marca-camara.svg" alt="Logo da Câmara dos Deputados" />
+      <h1 class="camara-title">Lista de Parlamentares</h1>
+    </header>
+    <div class="camara-selection">
+      <h2 class="camara-subtitle">
+        Selecione o partido e veja quem são os parlamentares:
+      </h2>
+      <select id="politicalSelect" name="politicalParty" onchange="onPoliticalSelectionChange(this)">
+        <label for="politicalParty">Selecione um partido</label>
+      </select>
+    </div>
+    <container id="lawmakers-list" class="camara-list-container">
+      <div class="member-card">
+        <h3 class="member-name"></h3>
+        <p></p>
+        <img class="member-picture" src="" alt="Foto do parlamentar">
+      </div>
+
+    </container>
+  </main>
+  <div id="loading">
+    <img class="loading-bar" src="./assets/img/loading.svg" alt="Loading bar" />
+  </div>
+</body>
+<script type="text/javascript" src="./scripts/main.js"></script>
+
 </html>
