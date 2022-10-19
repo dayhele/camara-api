@@ -6,7 +6,6 @@
   
   .camara-list {
     background-color: #efefef;
-    
   }
   
   .camara-header {
@@ -58,6 +57,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  .member-name {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: "Inter Tight", sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
   }
 
    img {
